@@ -25,3 +25,6 @@ RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.11.1/geckod
   tar -xvzf geckodriver-v0.11.1-linux64.tar.gz && \
   chmod +x geckodriver && \
   cp geckodriver /usr/local/bin/
+
+RUN curl -fsSL https://get.docker.com -o get-docker.sh | source get-docker.sh
+RUN rm get-docker.sh
